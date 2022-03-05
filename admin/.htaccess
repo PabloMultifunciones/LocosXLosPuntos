@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+
+    # Remove /index/
+    RewriteRule ^(.*)/index/?$ $1 [L,R=301]
+
+    # Remove trailing slashes (prevents duplicate SEO issues)
+    RewriteRule ^(.+)/$ $1 [L,R=301]
+
+    # Removes access to the system folder by users.
+    RewriteCond %{REQUEST_URI} ^system.*
+    RewriteRule ^(.*)$ /index.php/$1 [L]
+
+    # If not a file or directory, route everything to CI
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.php [L]
+    # RewriteRule ^(.*)$ index.php/$1 [L] # This is an alternative
+
+</IfModule>

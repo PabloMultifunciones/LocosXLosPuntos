@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|resources|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L,QSA] 
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} locosxlospuntos\.com\.ar [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://locosxlospuntos.com.ar/$1 [R,L]

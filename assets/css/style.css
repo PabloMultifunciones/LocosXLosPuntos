@@ -1,0 +1,675 @@
+@font-face {
+  font-family: 'Lemon Milk', monospace;
+}
+
+@font-face {
+  font-family: 'Lemon Milk', monospace;
+  src: url('..fonts/LEMONMILK-Regular.eot');
+  src: url('..fonts/LEMONMILK-Regular.eot?#iefix') format('embedded-opentype'),
+       url('..fonts/LEMONMILK-Regular.svg#LEMONMILK-Regular') format('svg'),
+       url('..fonts/LEMONMILK-Regular.ttf') format('ttf'),
+       url('..fonts/LEMONMILK-Regular.otf') format('otf'),
+       url('..fonts/LEMONMILK-Regular.woff') format('woff'),
+       url('..fonts/LEMONMILK-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lemon Milk" , 'Candal', sans-serif !important;
+}
+
+body{
+	width: 100%;
+    height: 100vh;
+}
+
+#home{
+    padding: 3vw;
+}
+
+button .puntos{
+    font-size: 1.5rem;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #007251;
+    border-color: #007251;
+}
+
+.logo-brand {
+    height: 28vh;
+    width: 28vh;
+    margin-top: -5vh;
+    margin-left: -1vh;
+}
+
+.top-header{
+	height: 100px;
+}
+
+.navContainer{
+	background-color: #fff;
+	/*height: 7vh;*/
+}
+
+.navContainer .navbar {
+	margin-left: auto;
+	width: 100%;
+	background-color: white;
+	z-index: 9;
+	text-align: right;
+}
+
+.navContainer .navbar button{
+	margin-left: auto;
+}
+
+.banner{
+	background-image: url("../imgs/banner.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 25rvh;
+}
+
+.slogan{
+	/*height: 7vh;*/
+}
+
+#navbarNav{
+    text-align: center;
+    font-size: 1.2vh;
+    padding: 1vh;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+
+.slogan h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #212529;
+    border-top: 2px solid black;
+    width: 100%;
+    padding: 0.5vh;
+}
+
+.tablainscripcion{
+    display: table;
+}
+
+.lugar{
+	display: inline-block;
+}
+
+.lugar .form-check, .lugar .dropdown{
+	display: inline-block;
+}
+
+.lugar .form-check-input{
+    display: none;
+}
+
+.form-check.arquero{
+    background: green;
+    padding: 8px;
+    border-radius: .25rem;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.form-check-label{
+    font-size: 0.7rem;
+}
+
+.inscriptlabel{
+    display: inline-block;
+    background: green;
+    color: white;
+    padding: 8px;
+    width: 60%;
+    border-radius: .25rem;
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.inscriptlabel.checkeao, .form-check.arquero.checkeao {
+    background: #212529;
+}
+
+.submitInscripcion{
+    background: #212529;
+    color: white;
+    border: none;
+    padding: 1vh;
+    border-radius: .25rem;
+    margin-top: 5vh;
+}
+
+.navbar-toggler{
+    height: 4vh;
+    width: 4vh;
+}
+
+#tabla{
+    padding-top: 2vh;
+}
+
+.table-container{
+    border-radius: 25px;
+    max-height: 50vh;
+    overflow: scroll;
+}
+
+table th {
+   background-color: #007251;
+   color: white;
+}
+
+tr:nth-child(even) {    
+    background-color: rgba(0,0,0,.075);
+}
+
+.actions button{
+	width: 40vw;
+    /* height: 5vh; */
+    margin: 2vh;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 4px;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.28); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.28);
+    -webkit-text-stroke: 2px white;
+    color: #007251;
+}
+
+.actions button:hover{
+    background-color: #005e44;
+    border-color: #005e44;
+}
+
+.btn-success:hover{
+    background-color: #005e44;
+    border-color: #005e44;
+}
+
+
+
+
+
+
+
+.proximos h2, #tabla h2{
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.proximos h2:after, #tabla h2:after{
+    content: "";
+    border-top: 1px solid;
+    display: inline-block;
+    height: 1px;
+    width: 30%;
+    position: relative;
+    float: right;
+    margin-right: -40%;
+    margin-top: 4%;
+}
+
+#tabla h2:after{
+    margin-right: 0;
+}
+
+#footer{
+    bottom: 0;
+    position: fixed;
+    width: 90%;
+    left: 5%;
+    border-top: black 1px solid;
+    height: 4vh;
+    background-color: white;
+}
+
+.social-link{
+    padding: 1vh 3vw;
+}
+
+.carousel-item{
+
+    color: white;
+    text-align: center;
+}
+
+.match-info{
+    background-color: #007251;
+    border-radius: 25px 25px 0 0;
+    margin-top: 1vh;
+}
+
+.match-info-bottom{
+    background-color: #007251;
+    font-size: 1.7rem;
+    border-radius: 0 0 25px 25px;
+}
+
+
+.card-header{
+    padding: 0.5vh;
+    font-size: 1.7rem
+}
+
+.card-body{
+    border: 0;
+    padding: 0;
+}
+
+.card-title{
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    margin-left: 15%;
+    font-size: 2vh;
+}
+
+img.cancha{
+    height: 25vh;
+    width: auto;
+    max-width: none;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#salas .btn{
+    width: 100%;
+    border-radius:0 0 25px 25px !important;
+    padding: 0.5vh;
+    font-size: 1.3vh;
+}
+
+.instrucciones-block{
+    text-align: center;
+    font-size: 1.2vh;
+}
+
+.instrucciones{
+    margin: 2vh;
+}
+
+.promotor{
+    background-color: #212529;
+    color: white;
+    font-size: 1.2vh;
+    padding: 1vh;
+    border-radius: 25px;
+    margin: 2vh;
+}
+
+.jugadores{
+    background-color: #212529;
+    color: white;
+    font-size: 1.2vh;
+    padding: 1vh;
+    border-radius: 25px;
+    text-align: center;
+    margin: 0 2vh;
+}
+
+.lugares-container{
+    margin: 2vh;
+    text-align: center;
+}
+
+.lugar button{
+    padding: 1vh 4vh;
+    border-radius: 25px;
+    margin-top: 0.5vh;
+}
+
+.sala-info{
+    margin: 2vh;
+}
+
+.section-container{
+    padding-bottom: 5vh;
+}
+
+.lugares-container .btn-success:active{
+    background-color: yellow !important;
+    border-color: yellow !important;
+}
+
+
+/*******************************************/
+/*                  MOBILE                 */
+
+@media screen and (max-width: 768px) { 
+
+    #home{
+        padding: 0;
+        padding-bottom: 40px;
+    }
+
+    .proximos{
+        padding: 3vw;
+    }
+
+    .slogan h1{
+        font-size: 1rem;
+    }
+
+
+    .navbar-toggler-icon{
+        width: 3vh;
+        height: 3vh;
+        margin-left: -2.5vw;
+    }
+
+    .proximos h2, #tabla h2 {
+    font-size: 1.2rem;
+}
+
+.actions button{
+    font-size: 1.3rem;
+    max-width: 100%;
+    margin: 1vh;
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.actions button .puntos{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.logo-brand {
+    height: auto;
+    max-width: 120%;
+    margin-top: -5vh;
+    margin-left: -2vh;
+}
+
+
+/* SALAS CAROUSEL */
+
+.form-control.filtro{
+    font-size: 0.6rem;
+}
+
+.card-header, .card-text {
+    font-size: 0.7rem;
+}
+
+.barrio {
+    font-size: 0.6rem;
+}
+
+.carousel-inner .col-4{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#salas .btn{
+    font-size: 0.7rem;
+    margin-top: -0.2vh;
+}
+
+.card-title{
+    font-size: 1.1rem;
+}
+
+/* TABLA */ 
+
+#tabla{
+    padding-top: 1vh;
+}
+
+.table thead th {
+    font-size: 0.7em;
+}
+
+.table td{
+   font-size: 0.7em; 
+       padding: .5em;
+}
+
+#tabla h2:after{
+    margin-right: 0;
+}
+
+/* FOOTER */
+
+#footer div{
+    font-size: 10px;
+}
+    
+
+
+/* DETALLE SALA */
+
+.sala .col-12{
+    text-align: center;
+}
+
+.jugadores{
+    font-size: 1em;
+}
+
+.instrucciones-block {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.promotor{
+    font-size: 0.8rem;
+}
+
+.instrucciones .btn{
+    font-size: 0.7em;
+}
+
+.lugares-container{
+    text-align: initial;
+}
+
+.lugar{
+    vertical-align: top;
+    padding: 0;
+        margin-bottom: 5px;
+}
+
+.lugar .btn{
+    font-size: 0.7em;
+    width: 97%;
+}
+
+.lugar .small{
+    font-size: 0.5em;
+}
+
+.inscriptLabel{
+    width: 80%;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+
+
+.inscriptLabel.amigo{
+    font-size: 0.5em;
+    padding: 10px;
+}
+
+.dropdown{
+    width: 100%;
+}
+
+.custom-select{
+    width: 65%;
+    border: none;
+}
+
+.alert, .alert .close{
+    font-size: 0.7em;
+}
+
+.tablaInscripcion{
+    text-align: center;
+}
+
+}
+
+
+
+/*
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+*/
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+  }
+  
+  .carousel-inner .carousel-item-left.active, 
+  .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+  }
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+
+
+/******** FILTRO **********/
+
+#busquedaTabla {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#tabla {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#tabla th, #tabla td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#tabla tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#tabla tr.header, #tabla tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+
+.tableElement{
+    display: inline-block;
+}
+
+.queEs{
+    padding-bottom: 10vh;
+}
+
+.reglamento li{
+    list-style: none;
+    font-size: 0.8rem;
+    line-height: 2rem;
+}
+
+.faq .card-header{
+    color: #155724 !important;
+    background-color: #d4edda;
+}
+
+.faq .btn-link{
+    color: #155724 !important;
+}
+
+#accordion{
+    margin-bottom: 10vh;
+}
+
+.reglamento{
+    padding-bottom: 10vh;
+    color: white;
+}
+
+.porEquipo{
+    border-bottom: 1px solid;
+}
+
+.individuales{
+   /* margin-top: 5vh; */
+}
+
+.misPartidos .btn{
+    width: 80%;
+    text-align: center;
+}
+
+.viejosPartidos{
+    margin-top: 3vh;
+}
+
+.proximosPartidos{
+    margin-top: 10vh;
+}
+
+/* MODAL INSCRIBITE*/
+
+#inscribiteModal{
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+#closeSuscribite{
+    background-color:red;
+    border-radius:50%;
+    width:30px;
+    height:30px;
+    padding-bottom:4px;
+}
